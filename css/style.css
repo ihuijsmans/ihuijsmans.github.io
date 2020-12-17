@@ -1,0 +1,91 @@
+
+/* 
+Use #welcomePage for id = 'welcomePage' (id selector)
+Use .square for class =  square' (class selector
+p * { text-decoration: underline; } 
+the text of the paragraph will be normal, but any children anywhere inside it will be underlined 
+*/
+
+html, body { 
+	font-family: "Helvetica", "Verdana", "Arial", sans-serif; 
+}
+
+.choiceGridContainer {
+	display: grid;
+	justify-items: center;
+	grid-template-columns: repeat(4, 25vw) ;
+	grid-template-rows: 25vh 25vh 25vh 25vh;
+	font-size: 5vh;
+	grid-column-gap: 1vw
+}
+
+.choiceTL {
+	grid-column: 2;
+  	grid-row: 2;
+  	align-self: end;
+  	width: 5em;
+  	height: 2.5em;
+  	border-top: 1vh solid lightgrey;
+  	border-left: 1vh solid lightgrey;
+  	border-right: 1vh solid lightgrey;
+}
+
+.choiceBL {
+	grid-column: 2 ;
+  	grid-row: 3;
+  	width: 5em;
+  	height: 2.5em;
+  	border-bottom: 1vh solid lightgrey;
+  	border-left: 1vh solid lightgrey;
+  	border-right: 1vh solid lightgrey;
+}
+
+.choiceTR {
+	grid-column: 3;
+  	grid-row: 2;
+  	align-self: end;
+  	width: 5em;
+  	height: 2.5em;
+  	border-top: 1vh solid lightgrey;
+  	border-left: 1vh solid lightgrey;
+  	border-right: 1vh solid lightgrey;
+}
+
+.choiceBR {
+	grid-column: 3;
+  	grid-row: 3;
+  	width: 5em;
+  	height: 2.5em;
+  	border-bottom: 1vh solid lightgrey;
+  	border-left: 1vh solid lightgrey;
+  	border-right: 1vh solid lightgrey;
+}
+
+.itemTL {
+	grid-column: 2;
+  	grid-row: 2;
+	align-self: end;
+}
+
+.itemTR {
+	grid-column: 3;
+  	grid-row: 2;
+	align-self: end;
+}
+
+.itemBL {
+	grid-column: 2;
+  	grid-row: 3;
+	align-self: start;
+}
+
+.itemBR {
+	grid-column: 3;
+  	grid-row: 3;
+	align-self: start;
+}
+
+
+
+
+
